@@ -1,0 +1,21 @@
+{
+	"Sources": {
+		"local": "fs://./../../../Modules"
+	},
+	"Modules": {
+		"Initiator": {
+			"Module": "DataImport",
+			"Source": "local"
+		},
+		"Deferred": [
+			{
+				"Module": "Distributer",
+				"Source": "local"
+			},
+			{
+				"Module": "Grocer",
+				"Source": "local"
+			}
+		]
+	}
+}
